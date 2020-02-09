@@ -1,0 +1,92 @@
+.typerepair-section
+    background: url('../img/back_line.png')no-repeat top center 
+    background-size: cover
+    padding-top: 147px
+    padding-bottom: 157px
+    position: relative
+.typerepair
+    width: 100%
+    display: flex
+    justify-content: center
+    flex-direction: column    
+    &_img
+        width: 28px
+        height: 28px
+        position: relative
+        margin: 0 auto
+        &::before
+            position: absolute
+            content: ''
+            width: 32px
+            height: 1px
+            background: $bg
+            right: -44px
+            top: 50%
+        &::after
+            position: absolute
+            content: ''
+            width: 32px
+            height: 1px
+            background: $bg
+            left: -44px
+            top: 50%
+    &_title
+        color: $black
+        +yeseve
+        font-size: 20px
+        font-weight: normal
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 13px
+    &_block
+        display: flex
+        width: 100%
+        justify-content: space-between
+        position: relative
+        &_item
+            display: flex
+            flex-direction: column
+            align-items: center
+            position: relative
+            margin-top: 31px
+            &_title
+                +yeseve
+                margin-bottom: 13px
+                display: block
+                font-size: 18px
+                font-weight: normal
+                color: $black
+                padding: 25px 34px 0 34px
+            &_img
+                width: 392px
+                height: 421px
+                z-index: 1
+                position: absolute
+            &_list
+                width: 330px
+                z-index: 5
+                background: #ffffff
+                margin-top: 294px
+                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
+                ul
+                    color: #959595
+                    margin-left: 50px
+                    +futbok
+                    font-size: 15px
+                    margin-bottom: 49px
+                    li
+                        margin-bottom: 10px
+            &_button
+                +yeseve
+                font-size: 18px
+                font-weight: normal
+                text-transform: uppercase
+                color: #ffffff
+                background: $bg
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 228px
+                height: 54px
+                position: absolute
+                margin-top: -24px

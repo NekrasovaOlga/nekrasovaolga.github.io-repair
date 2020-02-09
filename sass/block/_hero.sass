@@ -1,0 +1,105 @@
+.hero-section
+    height: 87vh
+    position: relative
+.hero
+    display: flex
+    height: 100%
+    width: 100%
+    &_instagram
+        width: 4%
+        &_item
+            writing-mode: tb-rl
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 100%
+            color: $bg
+            position: relative
+            &::after
+                position: absolute
+                content: ''
+                height: 51px
+                width: 1px
+                background: $bg
+                bottom: 30%
+                transform: translateX(-30%)
+
+                
+    &_block
+        background: url(../img/hero.png)no-repeat top left
+        background-size: cover
+        padding-left: 60px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        height: 100%
+        width: 100%
+        &_title
+            text-transform: uppercase
+            +yeseve
+            font-size: 40px
+            width: 600px
+            font-weight: normal
+            color: $white
+            span
+                color: $bg
+        &_description
+            width: 500px
+            +futbok
+            font-size: 22px
+            font-weight: normal
+            line-height: 30px
+            color: $white
+            margin: 19px 0 41px 0
+        &_btn
+            &_calcul
+                background: $bg
+                color: $white
+                border: none
+                box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3)
+                margin-right: 20px
+            &_submit
+                background: transparent
+                border: 1px solid $white
+                color: $white
+    &-scroll
+        position: absolute
+        bottom: -50px
+        width: 200px
+        height: 97px
+        display: flex
+        align-items: center
+        padding-left: 30px
+        background: $black
+        z-index: 9
+        &__text
+            color: $white
+            text-transform: uppercase
+            +yeseve
+            font-size: 14px
+            position: relative
+            display: flex
+            align-items: center
+            justify-content: center
+            &::after
+                position: absolute
+                content: '\e800'
+                width: 29px
+                height: 29px
+                +fontello
+                color: $bg
+                border: 2px solid $bg
+                border-radius: 100%
+                display: flex
+                align-items: center
+                justify-content: center
+                right: -40%
+.all_btn_item
+    text-transform: uppercase
+    font-size: 13px
+    padding: 19px 42px
+    border-radius: 2px
+    outline: none
+    
+    

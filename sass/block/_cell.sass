@@ -1,0 +1,160 @@
+.request-section
+    background: url('../img/speak.png')
+    background-repeat: no-repeat
+    background-position: top left
+    padding-bottom: 129px
+.request
+    position: relative
+    height: 690px
+    display: flex
+    justify-content: space-between
+    margin-bottom: 142px
+    margin: 0 auto
+    width: 100%
+    &_order
+        padding-top: 62px
+        padding-bottom: 100px
+        position: relative
+        display: flex
+        flex-direction: column
+        width: 778px
+        margin-right: 54px
+        &_item
+            display: flex
+            position: relative
+            align-items: center
+            &_num
+                width: 42px
+                height: 42px
+                border-radius: 50%
+                background: $bg
+                box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15)
+                display: flex
+                align-items: center
+                justify-content: center
+                color: #ffffff
+                font-size: 18px
+                +yeseve
+                &:nth-child(1)
+                   margin-right: 17px
+            &_text
+                &_item1
+                    width: 364px
+                &_item2
+                    width: 225px
+            &:nth-child(1)
+                   left: 305px
+                   top: 55px
+                   padding-bottom: 69px
+                   
+            &:nth-child(2)
+                   left: 385px
+                   top: 55px
+                   padding-bottom: 119px
+            &:nth-child(3)
+                   left: 408px
+                   top: 55px
+                   padding-bottom: 119px
+            &:nth-child(4)
+                   left: 333px
+                   top: 60px
+    &_cells
+        &_block
+            display: flex
+            margin-top: 38px
+            align-items: center
+            color: $bg
+            justify-content: center
+            +futdemi
+            font-size: 18px
+            &_img
+                width: 72px
+                height: 72px
+                background: $bg
+                box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2)
+                margin-right: 25px
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+            &_text
+                width: 225px
+    &_call
+        background: url('../img/bg_cell.png')
+        background-repeat: no-repeat
+        background-position: top left
+        width: 506px
+        height: 509px
+        margin-top: 106px
+        color: #ffffff
+        padding: 28px 49px
+        &_title
+            padding-bottom: 28px
+            margin: 0 auto
+            width: 297px
+            font-size: 18px
+            +futdemi
+            text-align: center
+        &_input
+            display: flex
+            flex-direction: column
+            +futbok
+            font-size: 15px
+            word-break: normal
+            margin-bottom: 48px
+            label
+                margin-bottom: 7px
+                color: rgba(255, 255, 255, 0.5)
+            input
+                height: 25px
+                outline: none
+                border: none
+                background: none
+                border-bottom: 1px solid rgba(255, 255, 255, 0.15)
+                color: #ffffff
+                font-size: 18px
+                &::placeholder
+                    color: #ffffff
+            &:nth-child(4)
+                margin-bottom: 16px
+            &_check
+                margin-bottom: 39px
+                input
+                    display: none
+                &_span
+                    position: relative
+                    padding-left: 24px
+                    &::before
+                        position: absolute
+                        width: 18px
+                        height: 18px
+                        background: $bg
+                        content: ''
+                        top: 0
+                        left: 0
+                    &::after
+                       position: absolute 
+                       content: ''
+                       background: url("../img/vector.svg")
+                       background-position: center center
+                       width: 18px
+                       height: 18px
+                       background-repeat: no-repeat
+                       top: 0
+                       left: 0
+                       display: none
+
+        &_btn
+            display: flex
+            justify-content: flex-end
+            margin: 0              
+input[type="checkbox"]:checked + .request_call_input_check_span
+    &::after
+        display: block
+                
+        &_btn
+            display: flex
+            justify-content: flex-end
+            margin: 0
+
+                

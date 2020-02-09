@@ -1,0 +1,73 @@
+.control-section
+    position: relative
+    z-index: 5
+    top: 0
+.control
+    position: relative
+    width: 100%
+    display: flex
+    justify-content: center
+    flex-direction: column  
+    align-items: center
+    height: auto
+    &_title
+        color: #ffffff
+    &_video
+        width: 817px
+        height: 434px
+        background: url('../img/repair_video.png')
+        background-repeat: no-repeat
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 0 auto
+        margin-top: 31px
+        &_btn
+            width: 85px
+            height: 85px
+            background: $bg
+            outline: none
+            border: none
+            border-radius: 50%
+    &_text
+        width: 681px
+        margin-top: 98px
+        +futbok
+        font-size: 20px
+        text-align: center
+        line-height: 34px
+        position: relative
+        &::before
+            position: absolute
+            background: $bg
+            width: 55px
+            height: 2px
+            border-radius: 30px
+            content: ''
+            left: 50%
+            top: -35px
+            transform: translate(-50%)
+    &_submit
+        color: $black
+        z-index: 5
+        display: flex
+        align-items: center
+        margin-bottom: 33px
+        margin-top: 91px
+        &_input
+            display: flex
+            flex-direction: column
+            +futbok
+            width: 231px
+            margin-right: 58px
+            input
+                border: none
+                margin-top: 7px
+                padding-bottom: 8px
+                border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+
+        &_check
+            position: relative
+        &_btn
+            margin: 0
+            width: 200px

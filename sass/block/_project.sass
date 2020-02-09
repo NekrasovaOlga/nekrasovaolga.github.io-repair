@@ -1,0 +1,85 @@
+.project-section
+    background: url(../img/completed-bg.png)top left
+    background-repeat: repeat-x
+    position: relative
+    display: flex
+    align-items: center
+    flex-direction: column
+.project 
+    display: flex
+    padding-top: 107px
+    overflow: hidden
+    &_item
+        justify-content: center
+        display: flex
+        flex-direction: column
+        width: 442px
+        margin-top: 70px
+        margin-right: 50px
+        &__title
+            color: $bg
+            width: 250px
+            +yeseve
+            font-size: 27px
+            line-height: 37px
+            text-transform: uppercase
+            letter-spacing: -0.07em
+            font-weight: normal
+            position: relative
+            &::before
+                position: absolute
+                content: ''
+                width: 92px
+                height: 1px
+                background: $bg
+                right: 0
+                bottom: 15px
+        &_description
+            +futbok
+            font-size: 18px
+            color: $white
+            margin: 34px 0 42px 0
+        &__block
+            display: flex
+            flex-wrap: wrap
+            &_item
+                width: 180px
+                span
+                    text-transform: uppercase
+                    color: $bg
+                    +yeseve
+                    font-weight: normal
+                p
+                    +futbok
+                    font-weight: normal
+                    color: $white
+                    margin: 9px 0 34px 0
+    &_img
+        &_list
+            display: flex
+            width: 623px
+            justify-content: space-between
+            margin-bottom: 46px
+            &__item
+                color: rgba(255, 255, 255, 0.3)
+                text-transform: uppercase
+                +yeseve
+                font-size: 14px
+                font-weight: normal
+                position: relative
+                padding-bottom: 7px
+                
+
+                &:hover
+                    cursor: pointer
+                input
+                    display: none
+input[type="radio"]:checked + .project_img_list_span 
+    color: $bg
+    &::before
+        position: absolute
+        content: ''
+        width: 100%
+        height: 1px
+        background: $bg
+        bottom: 0
