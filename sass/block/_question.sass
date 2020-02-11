@@ -1,0 +1,81 @@
+.question
+    width: 883px
+    background: #181818
+    color: #ffffff
+    margin: 0 auto
+    position: relative
+    top: -222px
+    padding-top: -222px
+    &-section
+        background: url("../img/question_bg.png") ,#181818
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: top center
+        position: relative
+    &_title
+        +yeseve
+        font-size: 20px
+        text-align: center
+        text-transform: uppercase
+        font-weight: normal
+        padding: 34px 0 45px 0
+    &_form
+        width: 520px
+        margin: 0 auto
+        label
+            color: rgba(255, 255, 255, 0.5)
+        input
+            color: #FFFFFF
+            border-bottom: 1px solid  rgba(255, 255, 255, 0.15)
+            &::placeholder
+                color: #FFFFFF
+        &_data
+            display: flex
+            input
+                width: 231px
+        &_quest
+            width: 100%
+            margin: 48px 0
+        &_submit
+            display: flex
+            flex-direction: column
+            justify-content: center
+            width: 100%
+            align-items: center
+            label
+                margin-bottom: 50px
+            button
+                width: 200px
+                margin-bottom: 34px
+.adress
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-bottom: 65px
+    margin-top: -222px
+    padding-top: 52px
+    &_title
+        text-align: center
+        color: $bg
+        +yeseve
+        font-size: 20px
+        text-transform: uppercase
+        line-height: 28px
+        font-weight: normal
+        width: 589px
+        margin: 0 auto
+    &_social
+        margin-bottom: 43px
+        display: flex
+        width: 71px
+        justify-content: space-between
+        margin-top: 26px
+        &_icon
+            width: 28px
+            height: 28px
+            display: flex
+            align-items: center
+            justify-content: center
+            background: $bg
+            border-radius: 50%
+    
