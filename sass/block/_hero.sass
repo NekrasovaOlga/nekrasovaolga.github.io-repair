@@ -39,13 +39,15 @@
             text-transform: uppercase
             +yeseve
             font-size: 40px
-            width: 600px
+            max-width: 600px
+            width: 100%
             font-weight: normal
             color: $white
             span
                 color: $bg
         &_description
-            width: 500px
+            max-width: 500px
+            width: 100%
             +futbok
             font-size: 22px
             font-weight: normal
@@ -102,6 +104,24 @@
     border-radius: 2px
     outline: none
     
-@media screen and ( max-width: 1300px ) and (min-width: 0px)
-    .hero-section
-        display: none
+@media screen and ( max-width: 1056px ) and (min-width: 0px)
+    .hero
+        height: auto
+        &-section
+            height: auto
+        &-scroll
+            display: none
+        &_instagram
+            display: none
+        &_block
+            width: 100%
+            padding: 85px 18px
+            &_btn
+                display: flex
+                flex-direction: column
+                width: 100%
+
+                &_calcul
+                    margin-right: 0
+                &_submit
+                    margin-top: 26px

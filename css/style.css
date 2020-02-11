@@ -144,8 +144,27 @@ input[type='text'] {
   border: none;
 }
 
-@media screen and (max-width: 1300px) and (min-width: 0px) {
+@media screen and (max-width: 1215px) and (min-width: 1056px) {
+  .nav_call_tel {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1056px) and (min-width: 0px) {
   .header {
+    height: auto;
+  }
+  .nav {
+    margin: 0 18px;
+    height: 57px;
+  }
+  .nav_menu {
+    display: none;
+  }
+  .nav_call_tel {
+    margin-right: 0;
+  }
+  .nav_call_btn {
     display: none;
   }
 }
@@ -219,7 +238,8 @@ input[type='text'] {
   text-transform: uppercase;
   font-family: 'Yeseva One';
   font-size: 40px;
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   font-weight: normal;
   color: #fff;
 }
@@ -229,7 +249,8 @@ input[type='text'] {
 }
 
 .hero_block_description {
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   font-family: 'FuturaBookC';
   font-size: 22px;
   font-weight: normal;
@@ -315,9 +336,38 @@ input[type='text'] {
   outline: none;
 }
 
-@media screen and (max-width: 1300px) and (min-width: 0px) {
+@media screen and (max-width: 1056px) and (min-width: 0px) {
+  .hero {
+    height: auto;
+  }
   .hero-section {
+    height: auto;
+  }
+  .hero-scroll {
     display: none;
+  }
+  .hero_instagram {
+    display: none;
+  }
+  .hero_block {
+    width: 100%;
+    padding: 85px 18px;
+  }
+  .hero_block_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .hero_block_btn_calcul {
+    margin-right: 0;
+  }
+  .hero_block_btn_submit {
+    margin-top: 26px;
   }
 }
 

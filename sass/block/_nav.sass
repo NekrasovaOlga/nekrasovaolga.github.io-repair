@@ -44,6 +44,21 @@
     outline: none
     border: none
     
-@media screen and ( max-width: 1300px ) and (min-width: 0px)
+@media screen and ( max-width: 1215px ) and (min-width: 1056px)
+    .nav
+        &_call
+            &_tel
+                display: none
+@media screen and ( max-width: 1056px ) and (min-width: 0px)
     .header
-        display: none
+        height: auto
+    .nav
+        margin: 0 18px
+        height: 57px
+        &_menu
+            display: none
+        &_call
+            &_tel
+                margin-right: 0
+            &_btn
+                display: none
