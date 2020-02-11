@@ -49,6 +49,8 @@
             align-items: center
             position: relative
             margin-top: 31px
+            width: 33%
+            max-width: 392px
             &_title
                 +yeseve
                 margin-bottom: 13px
@@ -63,7 +65,7 @@
                 z-index: 1
                 position: absolute
             &_list
-                width: 330px
+                width: 80%
                 z-index: 5
                 background: #ffffff
                 margin-top: 294px
@@ -90,3 +92,34 @@
                 height: 54px
                 position: absolute
                 margin-top: -24px
+
+@media screen and ( max-width: 1256px ) and (min-width: 980px)
+    .typerepair
+        &_block
+            &_item
+                &_img
+                    width: 95%
+                    img
+                        width: 100%
+                &_list
+                   border: 1px solid red 
+                   margin-top: 55%
+@media screen and ( max-width: 979px ) and (min-width: 0px)
+    .typerepair
+        &_block
+            display: flex
+            flex-direction: column
+            width: 100%
+            align-items: center
+            &_item
+                font-size: 1em
+                margin-bottom: 60px
+                width: 100%
+                position: relative
+                align-items: flex-start
+                &_img
+                    img
+                        width: 100%
+                &_list
+                    width: 80%
+                    

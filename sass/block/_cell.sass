@@ -1,8 +1,7 @@
 .request-section
-    background: url('../img/speak.png')
-    background-repeat: no-repeat
-    background-position: top left -25px
+    overflow: hidden
     padding-bottom: 129px
+    position: relative
 .request
     position: relative
     display: flex
@@ -10,6 +9,11 @@
     margin-bottom: 142px
     margin: 0 auto
     width: 100%
+    &-img
+        background-position: top left 
+        position: absolute
+        margin-left: -28%
+        background-size: contain
     &_order
         padding-top: 62px
         padding-bottom: 100px
@@ -155,4 +159,6 @@ input[type="checkbox"]:checked + .request_call_input_check_span
             justify-content: flex-end
             margin: 0
 
-                
+@media screen and ( max-width: 1256px ) and (min-width: 0px)
+    .request-section
+        display: none

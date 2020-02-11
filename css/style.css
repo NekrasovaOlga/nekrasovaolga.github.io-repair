@@ -59,6 +59,13 @@ input[type='text'] {
   outline: none;
 }
 
+@media screen and (max-width: 1257px) {
+  .content {
+    margin: 0 5px;
+    width: 98%;
+  }
+}
+
 .header {
   background: #131313;
   height: 100vh;
@@ -135,6 +142,12 @@ input[type='text'] {
   color: #fff;
   outline: none;
   border: none;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 0px) {
+  .header {
+    display: none;
+  }
 }
 
 .hero-section {
@@ -302,6 +315,12 @@ input[type='text'] {
   outline: none;
 }
 
+@media screen and (max-width: 1300px) and (min-width: 0px) {
+  .hero-section {
+    display: none;
+  }
+}
+
 .project-section {
   background: url(../img/completed-bg.png) top left;
   background-repeat: repeat-x;
@@ -439,6 +458,12 @@ input[type="radio"]:checked + .project_img_list_span::before {
   bottom: 0;
 }
 
+@media screen and (max-width: 1300px) and (min-width: 0px) {
+  .project-section {
+    display: none;
+  }
+}
+
 .typerepair-section {
   background: url("../img/back_line.png") no-repeat top center;
   background-size: cover;
@@ -522,6 +547,8 @@ input[type="radio"]:checked + .project_img_list_span::before {
           align-items: center;
   position: relative;
   margin-top: 31px;
+  width: 33%;
+  max-width: 392px;
 }
 
 .typerepair_block_item_title {
@@ -542,7 +569,7 @@ input[type="radio"]:checked + .project_img_list_span::before {
 }
 
 .typerepair_block_item_list {
-  width: 330px;
+  width: 80%;
   z-index: 5;
   background: #ffffff;
   margin-top: 294px;
@@ -584,11 +611,54 @@ input[type="radio"]:checked + .project_img_list_span::before {
   margin-top: -24px;
 }
 
+@media screen and (max-width: 1256px) and (min-width: 980px) {
+  .typerepair_block_item_img {
+    width: 95%;
+  }
+  .typerepair_block_item_img img {
+    width: 100%;
+  }
+  .typerepair_block_item_list {
+    border: 1px solid red;
+    margin-top: 55%;
+  }
+}
+
+@media screen and (max-width: 979px) and (min-width: 0px) {
+  .typerepair_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .typerepair_block_item {
+    font-size: 1em;
+    margin-bottom: 60px;
+    width: 100%;
+    position: relative;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .typerepair_block_item_img img {
+    width: 100%;
+  }
+  .typerepair_block_item_list {
+    width: 80%;
+  }
+}
+
 .request-section {
-  background: url("../img/speak.png");
-  background-repeat: no-repeat;
-  background-position: top left -25px;
+  overflow: hidden;
   padding-bottom: 129px;
+  position: relative;
 }
 
 .request {
@@ -602,6 +672,13 @@ input[type="radio"]:checked + .project_img_list_span::before {
   margin-bottom: 142px;
   margin: 0 auto;
   width: 100%;
+}
+
+.request-img {
+  background-position: top left;
+  position: absolute;
+  margin-left: -28%;
+  background-size: contain;
 }
 
 .request_order {
@@ -852,6 +929,12 @@ input[type="checkbox"]:checked + .request_call_input_check_span::after_btn {
   margin: 0;
 }
 
+@media screen and (max-width: 1256px) and (min-width: 0px) {
+  .request-section {
+    display: none;
+  }
+}
+
 .control-section {
   position: relative;
   z-index: 5;
@@ -974,6 +1057,12 @@ input[type="checkbox"]:checked + .request_call_input_check_span::after_btn {
   width: 200px;
 }
 
+@media screen and (max-width: 1256px) and (min-width: 0px) {
+  .control-section {
+    display: none;
+  }
+}
+
 .design_section {
   position: relative;
   background: url(../img/bg_design.png);
@@ -998,22 +1087,38 @@ input[type="checkbox"]:checked + .request_call_input_check_span::after_btn {
 }
 
 .design_text {
-  width: 763px;
+  max-width: 763px;
+  width: 100%;
   margin-top: 24px;
   font-family: 'FuturaBookC';
   font-size: 20px;
   text-align: center;
 }
 
+.steps_img img {
+  width: 100%;
+}
+
 .step {
-  margin-right: 136px;
   position: relative;
   padding-bottom: 161px;
-  width: 337px;
+  max-width: 337px;
+  width: 100%;
+  margin-right: 3%;
+}
+
+.step_img img {
+  width: 100%;
 }
 
 .step-section {
   padding-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .step_txt {
@@ -1184,6 +1289,8 @@ input[type="checkbox"]:checked + .request_call_input_check_span::after_btn {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-width: 272px;
+  width: 20%;
 }
 
 .team_block_item_work {
@@ -1269,6 +1376,43 @@ input[type="radio"]:checked + .step_block_item_link_text span {
   opacity: 1;
 }
 
+@media screen and (max-width: 975px) and (min-width: 0px) {
+  .design_section {
+    background: #252525;
+  }
+  .design h2 {
+    color: #ffffff;
+    padding-top: 52px;
+  }
+  .design_text {
+    color: #ffffff;
+    width: 90%;
+    margin-bottom: 9px;
+    line-height: 20px;
+  }
+  .step-section {
+    display: none;
+  }
+  .team {
+    margin-top: 76px;
+  }
+  .team_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .team_block_item {
+    margin-bottom: 50px;
+  }
+  .team_text_item {
+    display: none;
+  }
+}
+
 .reviews {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1294,7 +1438,8 @@ input[type="radio"]:checked + .step_block_item_link_text span {
 }
 
 .reviews_block_item {
-  width: 376px;
+  max-width: 376px;
+  width: 100%;
   background: #ffffff;
   padding: 24px 31px 85px 20px;
   position: relative;
@@ -1371,14 +1516,27 @@ input[type="radio"]:checked + .step_block_item_link_text span {
   border: none;
 }
 
+@media screen and (max-width: 1256px) and (min-width: 966px) {
+  .reviews_block_item {
+    border: 1px solid red;
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 965px) and (min-width: 0px) {
+  .reviews {
+    display: none;
+  }
+}
+
 .question {
-  width: 883px;
+  max-width: 883px;
   background: #181818;
   color: #ffffff;
   margin: 0 auto;
   position: relative;
   top: -222px;
-  padding-top: -222px;
+  width: 100%;
 }
 
 .question-section {
@@ -1399,7 +1557,8 @@ input[type="radio"]:checked + .step_block_item_link_text span {
 }
 
 .question_form {
-  width: 520px;
+  max-width: 520px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -1493,7 +1652,8 @@ input[type="radio"]:checked + .step_block_item_link_text span {
   text-transform: uppercase;
   line-height: 28px;
   font-weight: normal;
-  width: 589px;
+  max-width: 589px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -1525,7 +1685,68 @@ input[type="radio"]:checked + .step_block_item_link_text span {
   border-radius: 50%;
 }
 
+.adress_social_img img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 0px) {
+  .question {
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .question_form {
+    padding: 0 17px;
+  }
+  .question_form_data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .question_form_data input {
+    width: 100%;
+    margin-bottom: 62px;
+  }
+  .question_form_quest {
+    margin: 0 0 21px 0;
+  }
+  .question_form_submit {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .question_form_submit button {
+    width: 100%;
+  }
+  .adress {
+    margin-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .control_submit_input {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
 .footer {
   background: #181818;
+}
+
+@media screen and (max-width: 980px) and (min-width: 0px) {
+  .footer {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

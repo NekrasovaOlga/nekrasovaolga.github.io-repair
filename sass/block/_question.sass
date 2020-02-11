@@ -1,11 +1,11 @@
 .question
-    width: 883px
+    max-width: 883px
     background: #181818
     color: #ffffff
     margin: 0 auto
     position: relative
     top: -222px
-    padding-top: -222px
+    width: 100%
     &-section
         background: url("../img/question_bg.png") ,#181818
         background-repeat: no-repeat
@@ -20,7 +20,8 @@
         font-weight: normal
         padding: 34px 0 45px 0
     &_form
-        width: 520px
+        max-width: 520px
+        width: 100%
         margin: 0 auto
         label
             color: rgba(255, 255, 255, 0.5)
@@ -62,7 +63,9 @@
         text-transform: uppercase
         line-height: 28px
         font-weight: normal
-        width: 589px
+        max-width: 589px
+        width: 100%
+
         margin: 0 auto
     &_social
         margin-bottom: 43px
@@ -78,4 +81,34 @@
             justify-content: center
             background: $bg
             border-radius: 50%
-    
+        &_img
+            img
+                width: 100%
+@media screen and ( max-width: 1300px ) and (min-width: 0px)
+    .question
+        top: 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        &_form
+            padding: 0 17px
+
+            &_data
+                flex-direction: column
+                input
+                    width: 100%
+                    margin-bottom: 62px
+            &_quest
+                margin: 0 0 21px 0
+            &_submit
+                align-items: flex-start
+                button
+                    width: 100%
+    .adress
+        margin-top: 0
+        flex-direction: column-reverse
+        &_title
+
+    .control_submit_input
+        width: 100%
+        margin-right: 0
