@@ -41,6 +41,7 @@
   max-width: 1256px;
   width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 a {
@@ -157,6 +158,7 @@ input[type='text'] {
   .nav {
     margin: 0 18px;
     height: 57px;
+    font-size: 0.8em;
   }
   .nav_menu {
     display: none;
@@ -165,6 +167,12 @@ input[type='text'] {
     margin-right: 0;
   }
   .nav_call_btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 333px) and (min-width: 0px) {
+  .nav_call_tel {
     display: none;
   }
 }
@@ -353,6 +361,29 @@ input[type='text'] {
     width: 100%;
     padding: 85px 18px;
   }
+}
+
+@media screen and (max-width: 1056px) and (min-width: 555px) {
+  .hero_block_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 55px;
+    padding: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .hero_block_btn button {
+    height: 55px;
+    width: 100%;
+    max-width: 285px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 554px) and (min-width: 0px) {
   .hero_block_btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -361,13 +392,13 @@ input[type='text'] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    width: 285px;
   }
   .hero_block_btn_calcul {
     margin-right: 0;
   }
   .hero_block_btn_submit {
-    margin-top: 26px;
+    margin-top: 15px;
   }
 }
 
@@ -612,7 +643,7 @@ input[type="radio"]:checked + .project_img_list_span::before {
 }
 
 .typerepair_block_item_img {
-  width: 392px;
+  max-width: 392px;
   height: 421px;
   z-index: 1;
   position: absolute;
@@ -669,7 +700,6 @@ input[type="radio"]:checked + .project_img_list_span::before {
     width: 100%;
   }
   .typerepair_block_item_list {
-    border: 1px solid red;
     margin-top: 55%;
   }
 }
