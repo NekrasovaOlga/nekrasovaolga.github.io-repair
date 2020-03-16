@@ -47,10 +47,12 @@
             display: flex
             flex-direction: column
             align-items: center
-            position: relative
+            justify-content: flex-start
             margin-top: 31px
             width: 33%
             max-width: 392px
+            position: relative
+            padding-bottom: 30px
             &_title
                 +yeseve
                 margin-bottom: 13px
@@ -61,12 +63,12 @@
                 padding: 25px 34px 0 34px
             &_img
                 max-width: 392px
-                height: 421px
                 z-index: 1
                 position: absolute
             &_list
                 width: 80%
                 z-index: 5
+                position: relative
                 background: #ffffff
                 margin-top: 294px
                 box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
@@ -91,7 +93,8 @@
                 width: 228px
                 height: 54px
                 position: absolute
-                margin-top: -24px
+                bottom: 0
+                margin-bottom: -24px
 
 @media screen and ( max-width: 1256px ) and (min-width: 980px)
     .typerepair
